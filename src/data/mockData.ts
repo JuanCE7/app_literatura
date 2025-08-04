@@ -1,9 +1,9 @@
 export const autores = [
     {
-      nombre: "María González Pérez",
+      nombre: "María José Moscol Castillo",
       especialidad: "Narrativa Contemporánea",
       ensayos: 3,
-      foto: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
+      foto: "https://scontent.floh1-1.fna.fbcdn.net/v/t39.30808-6/323408026_1322957541857345_7004944898383939008_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=gECwAFzqT2cQ7kNvwFgz5eo&_nc_oc=AdmBVlgBeAqBvo5dqP4GAltJVynjG8mw1uuAt0NdhorP4h0nYvaBvtlbUIHhg_1vhNSNjY3JH5XWRKKKQEtojsHy&_nc_zt=23&_nc_ht=scontent.floh1-1.fna&_nc_gid=8gk4v1orMwKUPjQayaJaoQ&oh=00_AfRgAQm1nCg4W5eWM3SHeEYqv-GvULw6ZXHiBvMlMgH2vQ&oe=688AB9E2",
       descripcion: "Especialista en análisis narrativo y pedagogía digital. Sus investigaciones se centran en la adaptación de textos clásicos para nuevas generaciones.",
       temas: ["Realismo Mágico", "Pedagogía Digital", "Literatura Juvenil"],
       color: "from-purple-400 to-pink-400"

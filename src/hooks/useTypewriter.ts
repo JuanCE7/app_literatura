@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useTypewriter = (texts: string[], speed: number = 80, delay: number = 3000) => {
+export const useTypewriter = (texts: string[]) => {
   const [currentText, setCurrentText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
 
@@ -16,13 +16,13 @@ export const useTypewriter = (texts: string[], speed: number = 80, delay: number
         setTimeout(() => {
           setCurrentText('');
           setTextIndex((prev) => (prev + 1) % texts.length);
-        }, delay);
+        }, 3000);
         clearInterval(typeWriter);
       }
-    }, speed);
+    }, 80);
 
     return () => clearInterval(typeWriter);
-  }, [textIndex, texts, speed, delay]);
+  }, [textIndex]);
 
   return currentText;
 };
