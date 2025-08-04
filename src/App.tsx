@@ -30,10 +30,11 @@ function App() {
 
   // Custom hooks
   const heroTexts = [
-    "Descubre la magia de las palabras...",
-    "Explorando nuevos horizontes literarios...",
-    "Donde la pedagogía encuentra la literatura...",
-    "Transformando mentes a través de la lectura..."
+    "Una travesía por nuestras letras, raíces y voces.",
+    "Redescubre el alma de América a través de sus palabras.",
+    "Celebrando la riqueza literaria de lo nuestro.",
+    "Lecturas que despiertan identidad.",
+    "Entre historias y palabras, renace lo hispanoamericano."
   ];
   
   const currentText = useTypewriter(heroTexts);

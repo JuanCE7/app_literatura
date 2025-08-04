@@ -11,13 +11,13 @@ export interface VideoResena {
   
   export const videoResenas: VideoResena[] = [
     {
-      titulo: "Cien Años de Soledad: Una Perspectiva Pedagógica",
-      autor: "Miguel Ángel Hernández",
+      titulo: "Máscaras",
+      autor: "Miriam Álvarez, Valeria Mallaguari",
       duracion: "8:45",
       thumbnail: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600",
       views: "2.3k",
       likes: 156,
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/watch?v=97eFZ7GXUCI",
       descripcion: "Análisis profundo de la obra maestra de García Márquez desde una perspectiva educativa moderna."
     },
     {
