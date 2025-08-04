@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Play, Video, Star, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Play, Video, Star, X } from "lucide-react";
 
 interface VideoResena {
   titulo: string;
@@ -18,6 +18,7 @@ interface VideoResenasPageProps {
 
 const VideoResenasPage: React.FC<VideoResenasPageProps> = ({ videos }) => {
   const [selectedVideo, setSelectedVideo] = useState<VideoResena | null>(null);
+  const [hasVideoError, setHasVideoError] = useState(false);
 
   return (
     <section className="pt-16 sm:pt-24 pb-8 sm:pb-16 min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
@@ -33,20 +34,20 @@ const VideoResenasPage: React.FC<VideoResenasPageProps> = ({ videos }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {videos.map((video, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up"
-              style={{animationDelay: `${index * 0.15}s`}}
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={video.thumbnail} 
+                <img
+                  src={video.thumbnail}
                   alt={video.titulo}
                   className="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button 
+                  <button
                     onClick={() => setSelectedVideo(video)}
                     className="bg-gradient-to-r from-red-600 to-pink-600 text-white p-4 sm:p-6 rounded-full hover:from-red-700 hover:to-pink-700 transform hover:scale-110 transition-all duration-200 shadow-2xl"
                   >
@@ -81,9 +82,11 @@ const VideoResenasPage: React.FC<VideoResenasPageProps> = ({ videos }) => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Video className="w-3 h-3 sm:w-4 sm:h-4 text-pink-400" />
-                    <span className="text-xs sm:text-sm text-gray-300">Video Reseña</span>
+                    <span className="text-xs sm:text-sm text-gray-300">
+                      Video Reseña
+                    </span>
                   </div>
-                  <button 
+                  <button
                     onClick={() => setSelectedVideo(video)}
                     className="text-pink-400 hover:text-pink-300 transition-colors text-xs sm:text-sm font-medium"
                   >
@@ -98,23 +101,30 @@ const VideoResenasPage: React.FC<VideoResenasPageProps> = ({ videos }) => {
         {/* Modal de Video */}
         {selectedVideo && (
           <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
-              <div className="relative">
-                <button 
-                  onClick={() => setSelectedVideo(null)}
-                  className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
-                >
-                  <X className="w-6 h-6" />
-                </button>
-                <div className="aspect-video">
-                  <iframe
-                    src={selectedVideo.videoUrl}
-                    title={selectedVideo.titulo}
-                    className="w-full h-full"
-                    allowFullScreen
-                  />
+            <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden relative">
+              <button
+                onClick={() => {
+                  setSelectedVideo(null);
+                  setHasVideoError(false);
+                }}
+                className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+
+              <div className="aspect-video bg-gray-100 flex items-center justify-center">
+                <div className="text-center p-8">
+                  <a
+                    href={selectedVideo.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800"
+                  >
+                    Ver video en una nueva pestaña
+                  </a>
                 </div>
               </div>
+
               <div className="p-6">
                 <h3 className="text-2xl font-serif font-bold text-gray-800 mb-2">
                   {selectedVideo.titulo}

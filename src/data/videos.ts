@@ -27,7 +27,7 @@ export interface VideoResena {
       thumbnail: "https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&w=600",
       views: "1.8k",
       likes: 142,
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/watch?v=wWyjZUXhZuc&t=8s",
       descripcion: "Estrategias innovadoras para hacer la poesía accesible y emocionante para estudiantes contemporáneos."
     },
     {

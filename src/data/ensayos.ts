@@ -40,14 +40,5 @@ export interface Ensayo {
       rating: 4.7,
       preview: "Las palabras poseen un poder transformador que trasciende las páginas de los libros. Este ensayo examina cómo la literatura influye en la construcción de identidad, valores y perspectivas sociales de los estudiantes, analizando casos específicos donde textos literarios han generado cambios significativos en comunidades educativas..."
     },
-    {
-      titulo: "Hermenéutica Literaria Contemporánea",
-      autor: "Miguel Ángel Hernández",
-      resumen: "Una aproximación moderna a la interpretación de textos clásicos desde perspectivas pedagógicas innovadoras...",
-      paginas: 22,
-      categoria: "Teoría Literaria",
-      fecha: "Febrero 2025",
-      rating: 4.6,
-      preview: "La hermenéutica literaria ha evolucionado significativamente en las últimas décadas. Este trabajo propone nuevos marcos interpretativos que combinan teorías clásicas con enfoques contemporáneos, facilitando la comprensión de textos complejos a través de metodologías accesibles para estudiantes de pedagogía..."
-    }
+
   ];
