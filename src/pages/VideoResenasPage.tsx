@@ -1,5 +1,5 @@
-import React from 'react';
-import { Play, Video, Star } from 'lucide-react';
+import React, { useState } from 'react';
+import { Play, Video, Star, X } from 'lucide-react';
 
 interface VideoResena {
   titulo: string;
@@ -8,6 +8,8 @@ interface VideoResena {
   thumbnail: string;
   views: string;
   likes: number;
+  videoUrl: string;
+  descripcion: string;
 }
 
 interface VideoResenasPageProps {
@@ -15,6 +17,8 @@ interface VideoResenasPageProps {
 }
 
 const VideoResenasPage: React.FC<VideoResenasPageProps> = ({ videos }) => {
+  const [selectedVideo, setSelectedVideo] = useState<VideoResena | null>(null);
+
   return (
     <section className="pt-16 sm:pt-24 pb-8 sm:pb-16 min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +46,10 @@ const VideoResenasPage: React.FC<VideoResenasPageProps> = ({ videos }) => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="bg-gradient-to-r from-red-600 to-pink-600 text-white p-4 sm:p-6 rounded-full hover:from-red-700 hover:to-pink-700 transform hover:scale-110 transition-all duration-200 shadow-2xl">
+                  <button 
+                    onClick={() => setSelectedVideo(video)}
+                    className="bg-gradient-to-r from-red-600 to-pink-600 text-white p-4 sm:p-6 rounded-full hover:from-red-700 hover:to-pink-700 transform hover:scale-110 transition-all duration-200 shadow-2xl"
+                  >
                     <Play className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
                   </button>
                 </div>
@@ -68,19 +75,62 @@ const VideoResenasPage: React.FC<VideoResenasPageProps> = ({ videos }) => {
                 <p className="text-gray-300 text-sm sm:text-base mb-3 sm:mb-4">
                   Por {video.autor}
                 </p>
+                <p className="text-gray-400 text-sm mb-4">
+                  {video.descripcion}
+                </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Video className="w-3 h-3 sm:w-4 sm:h-4 text-pink-400" />
                     <span className="text-xs sm:text-sm text-gray-300">Video Reseña</span>
                   </div>
-                  <button className="text-pink-400 hover:text-pink-300 transition-colors text-xs sm:text-sm font-medium">
-                    Ver más →
+                  <button 
+                    onClick={() => setSelectedVideo(video)}
+                    className="text-pink-400 hover:text-pink-300 transition-colors text-xs sm:text-sm font-medium"
+                  >
+                    Ver ahora →
                   </button>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Modal de Video */}
+        {selectedVideo && (
+          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
+              <div className="relative">
+                <button 
+                  onClick={() => setSelectedVideo(null)}
+                  className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+                <div className="aspect-video">
+                  <iframe
+                    src={selectedVideo.videoUrl}
+                    title={selectedVideo.titulo}
+                    className="w-full h-full"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-serif font-bold text-gray-800 mb-2">
+                  {selectedVideo.titulo}
+                </h3>
+                <p className="text-gray-600 mb-4">Por {selectedVideo.autor}</p>
+                <p className="text-gray-700 leading-relaxed">
+                  {selectedVideo.descripcion}
+                </p>
+                <div className="flex items-center justify-between mt-6 text-sm text-gray-500">
+                  <span>{selectedVideo.views} visualizaciones</span>
+                  <span>{selectedVideo.likes} me gusta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

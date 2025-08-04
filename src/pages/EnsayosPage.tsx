@@ -1,5 +1,5 @@
-import React from 'react';
-import { Download, FileText, Star } from 'lucide-react';
+import React, { useState } from 'react';
+import { Download, FileText, Star, X } from 'lucide-react';
 
 interface Ensayo {
   titulo: string;
@@ -9,6 +9,7 @@ interface Ensayo {
   categoria: string;
   fecha: string;
   rating: number;
+  preview: string;
 }
 
 interface EnsayosPageProps {
@@ -16,6 +17,8 @@ interface EnsayosPageProps {
 }
 
 const EnsayosPage: React.FC<EnsayosPageProps> = ({ ensayos }) => {
+  const [selectedEnsayo, setSelectedEnsayo] = useState<Ensayo | null>(null);
+
   return (
     <section className="pt-16 sm:pt-24 pb-8 sm:pb-16 min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,13 +74,64 @@ const EnsayosPage: React.FC<EnsayosPageProps> = ({ ensayos }) => {
                   <Download className="w-3 h-3 sm:w-4 sm:h-4" />
                   Descargar
                 </button>
-                <button className="px-4 sm:px-6 py-2 sm:py-3 border-2 border-blue-600 text-blue-600 rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-300 font-medium text-sm sm:text-base">
+                <button 
+                  onClick={() => setSelectedEnsayo(ensayo)}
+                  className="px-4 sm:px-6 py-2 sm:py-3 border-2 border-blue-600 text-blue-600 rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-300 font-medium text-sm sm:text-base"
+                >
                   Vista previa
                 </button>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Modal de Vista Previa */}
+        {selectedEnsayo && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="p-6 sm:p-8">
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl font-serif font-bold text-gray-800 mb-2">
+                      {selectedEnsayo.titulo}
+                    </h3>
+                    <p className="text-gray-600">Por {selectedEnsayo.autor} • {selectedEnsayo.fecha}</p>
+                  </div>
+                  <button 
+                    onClick={() => setSelectedEnsayo(null)}
+                    className="text-gray-500 hover:text-gray-700 p-2"
+                  >
+                    <X className="w-6 h-6" />
+                  </button>
+                </div>
+                
+                <div className="prose max-w-none">
+                  <p className="text-lg leading-relaxed text-gray-700 mb-6">
+                    {selectedEnsayo.preview}
+                  </p>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <p className="text-gray-600 italic text-center">
+                      Vista previa del ensayo completo. Descarga el PDF para leer el contenido completo.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 mt-8">
+                  <button className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 font-medium">
+                    <Download className="w-4 h-4" />
+                    Descargar PDF Completo
+                  </button>
+                  <button 
+                    onClick={() => setSelectedEnsayo(null)}
+                    className="px-6 py-3 border-2 border-gray-300 text-gray-600 rounded-xl hover:bg-gray-50 transition-all duration-300 font-medium"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

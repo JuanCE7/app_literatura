@@ -185,4 +185,30 @@
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
+
+  /* Improved mobile spacing */
+  .animate-fade-in-up {
+    animation: fadeInUpMobile 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+/* Enhanced mobile performance */
+@media (max-width: 768px) {
+  /* Reduce particle effects on mobile */
+  .animate-float {
+    animation-duration: 8s;
+  }
+  
+  /* Optimize hover effects for touch */
+  .group:hover .group-hover\:scale-110 {
+    transform: scale(1.05);
+  }
+  
+  /* Better touch targets */
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
 }

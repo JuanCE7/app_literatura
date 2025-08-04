@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 // Components
 import Navigation from './components/Navigation';
 import PageTransition from './components/PageTransition';
-import FloatingParticles from './components/FloatingParticles';
-import MouseFollower from './components/MouseFollower';
+import FloatingElements from './components/FloatingElements';
 import PageNavigation from './components/PageNavigation';
 
 // Pages
@@ -14,25 +13,32 @@ import EnsayosPage from './pages/EnsayosPage';
 import VideoResenasPage from './pages/VideoResenasPage';
 import ComunidadPage from './pages/ComunidadPage';
 
-// Data
-import { autores, ensayos, videoResenas } from './data/mockData';
-import { useTypewriter } from './hooks/useTypewriter';
-
 // Hooks
+import { useTypewriter } from './hooks/useTypewriter';
+import { useParticles } from './hooks/useParticles';
+import { useMousePosition } from './hooks/useMousePosition';
+
+// Data
+import { autores } from './data/autores';
+import { ensayos } from './data/ensayos';
+import { videoResenas } from './data/videos';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('inicio');
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Custom hooks
   const heroTexts = [
     "Descubre la magia de las palabras...",
     "Explorando nuevos horizontes literarios...",
     "Donde la pedagogía encuentra la literatura...",
     "Transformando mentes a través de la lectura..."
   ];
-
+  
   const currentText = useTypewriter(heroTexts);
+  const particles = useParticles(2000);
+  const mousePosition = useMousePosition();
 
   const navigateToPage = (pageId: string) => {
     if (pageId === currentPage) return;
@@ -46,6 +52,11 @@ function App() {
         setIsTransitioning(false);
       }, 300);
     }, 600);
+  };
+
+  const getPageTransitionClass = () => {
+    if (!isTransitioning) return '';
+    return 'animate-page-turn';
   };
 
   const renderCurrentPage = () => {
@@ -67,9 +78,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden">
-      {/* Interactive Elements */}
-      <FloatingParticles />
-      <MouseFollower isTransitioning={isTransitioning} />
+      {/* Floating Elements */}
+      <FloatingElements 
+        particles={particles} 
+        mousePosition={mousePosition} 
+        isTransitioning={isTransitioning} 
+      />
 
       {/* Navigation */}
       <Navigation
@@ -79,11 +93,11 @@ function App() {
         navigateToPage={navigateToPage}
       />
 
-      {/* Page Transition */}
+      {/* Page Transition Overlay */}
       <PageTransition isTransitioning={isTransitioning} />
 
       {/* Main Content */}
-      <div className={`transition-all duration-700 ${isTransitioning ? 'animate-page-turn' : ''}`}>
+      <div className={`transition-all duration-700 ${getPageTransitionClass()}`}>
         {renderCurrentPage()}
       </div>
 

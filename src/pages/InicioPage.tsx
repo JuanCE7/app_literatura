@@ -1,6 +1,5 @@
 import React from 'react';
-import { Users, FileText, ChevronDown } from 'lucide-react';
-import { Feather, BookOpen } from 'lucide-react';
+import { BookOpen, FileText, Users, ChevronDown, Feather } from 'lucide-react';
 
 interface InicioPageProps {
   currentText: string;
