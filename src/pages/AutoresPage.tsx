@@ -26,7 +26,7 @@ const AutoresPage: React.FC<AutoresPageProps> = ({ autores }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-16 animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-800 mb-4 sm:mb-6">
-            Autores del 6to Ciclo
+            Autores del 6to Ciclo y 5to Ciclo
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Conoce a los talentosos estudiantes que han contribuido con sus

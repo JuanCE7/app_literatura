@@ -11,34 +11,23 @@ export interface Ensayo {
   
   export const ensayos: Ensayo[] = [
     {
-      titulo: "La Metamorfosis de la Enseñanza Literaria",
-      autor: "Laura Pérez",
+      titulo: "Estrategias narrativas en La sangre de la aurora: la focalización de la violencia",
+      autor: "Maria José Moscol",
       resumen: "Un análisis profundo sobre cómo la pedagogía moderna transforma la enseñanza de la literatura clásica en el siglo XXI...",
-      paginas: 15,
-      categoria: "Pedagogía",
-      fecha: "Febrero 2025",
+      paginas: 5,
+      categoria: "Novela",
+      fecha: "Julio 2025",
       rating: 4.8,
-      preview: "La literatura clásica enfrenta desafíos únicos en el contexto educativo contemporáneo. Este ensayo explora metodologías innovadoras que permiten conectar obras atemporales con estudiantes del siglo XXI, utilizando herramientas digitales y enfoques pedagógicos modernos para revitalizar textos que han perdido relevancia aparente en las nuevas generaciones..."
+      preview: "La sangre de la aurora es una novela de ficción histórica de la escritora peruana Claudia Salazar Jiménez publicada en 2013. Ha sido traducida al inglés por Elizabeth Bryer y presentada en la ciudad de Nueva York, donde reside actualmente la autora..."
     },
     {
-      titulo: "Narrativas Digitales en el Aula",
-      autor: "Roberto Silva",
+      titulo: "Crescendo del caleidoscopio neobarroco en la angustia corpórea",
+      autor: "Abigail Arias",
       resumen: "Explorando las nuevas formas de contar historias en la era digital y su impacto transformador en la educación...",
-      paginas: 12,
-      categoria: "Tecnología Educativa",
-      fecha: "Enero 2025",
-      rating: 4.9,
-      preview: "La revolución digital ha transformado no solo cómo consumimos contenido, sino también cómo lo creamos y enseñamos. Las narrativas digitales representan una oportunidad única para integrar tecnología y literatura, creando experiencias inmersivas que capturan la atención de estudiantes nativos digitales..."
+      paginas: 4,
+      categoria: "Poesía",
+      fecha: "Julio 2025",
+      rating: 4.8,
+      preview: "'La Mujer de Helio' es el título de una obra poética de la escritora ecuatoriana Dina Bellrham. La autora construye un sujeto neobarroco a través de la figura de la 'Mujer de Helio', quien representa una manifestación de la subjetividad poética y sus discursos ocultos. La obra explora la relación entre el sujeto poético y el lenguaje, utilizando elementos del neobarroco para crear una experiencia estética compleja y profunda..."
     },
-    {
-      titulo: "El Poder Transformador de la Palabra",
-      autor: "Isabella Torres",
-      resumen: "Reflexiones profundas sobre el impacto social y emocional de la literatura en la formación integral estudiantil...",
-      paginas: 18,
-      categoria: "Impacto Social",
-      fecha: "Marzo 2025",
-      rating: 4.7,
-      preview: "Las palabras poseen un poder transformador que trasciende las páginas de los libros. Este ensayo examina cómo la literatura influye en la construcción de identidad, valores y perspectivas sociales de los estudiantes, analizando casos específicos donde textos literarios han generado cambios significativos en comunidades educativas..."
-    },
-
   ];
