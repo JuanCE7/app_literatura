@@ -35,7 +35,7 @@ const InicioPage: React.FC<InicioPageProps> = ({
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif font-bold text-gray-800 mb-4 leading-tight">
             Redescubriendo
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 block animate-gradient">
-               lo Hispanoamericano
+              lo Hispanoamericano
             </span>
           </h1>
         </div>

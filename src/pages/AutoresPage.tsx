@@ -18,9 +18,13 @@ interface Autor {
 
 interface AutoresPageProps {
   autores: Autor[];
+  navigateToPage: (page: string) => void;
 }
 
-const AutoresPage: React.FC<AutoresPageProps> = ({ autores }) => {
+const AutoresPage: React.FC<AutoresPageProps> = ({
+  autores,
+  navigateToPage,
+}) => {
   return (
     <section className="pt-16 sm:pt-24 pb-8 sm:pb-16 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,7 +125,10 @@ const AutoresPage: React.FC<AutoresPageProps> = ({ autores }) => {
                   </div>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-2 sm:py-3 rounded-xl hover:from-amber-700 hover:to-orange-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base">
+                <button
+                  onClick={() => navigateToPage("ensayos")}
+                  className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-2 sm:py-3 rounded-xl hover:from-amber-700 hover:to-orange-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base"
+                >
                   Ver trabajos
                 </button>
               </div>
