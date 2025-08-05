@@ -14,7 +14,7 @@ export interface Ensayo {
     {
       titulo: "Estrategias narrativas en La sangre de la aurora: la focalización de la violencia",
       autor: "Maria José Moscol",
-      resumen: "Un análisis profundo sobre cómo la pedagogía moderna transforma la enseñanza de la literatura clásica en el siglo XXI...",
+      resumen: "La sangre de la aurora es una novela de ficción histórica de la escritora peruana Claudia Salazar...",
       paginas: 5,
       categoria: "Novela",
       fecha: "Julio 2025",
@@ -25,7 +25,7 @@ export interface Ensayo {
     {
       titulo: "Crescendo del caleidoscopio neobarroco en la angustia corpórea",
       autor: "Abigail Arias",
-      resumen: "Explorando las nuevas formas de contar historias en la era digital y su impacto transformador en la educación...",
+      resumen: "'La Mujer de Helio' es el título de una obra poética de la escritora ecuatoriana Dina Bellrham...",
       paginas: 4,
       categoria: "Poesía",
       fecha: "Julio 2025",

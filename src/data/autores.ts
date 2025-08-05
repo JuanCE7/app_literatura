@@ -201,7 +201,7 @@ export interface Autor {
       ensayos: 1,
       foto: "https://lh3.googleusercontent.com/a-/ALV-UjWslhkE85II4eyK_DtTiffh_diKgNio_to9dy0KVnwYbgxRCo1-bxE_O2nDPhhNbetIFhKn9Ce3AsSYNIaz2gSmuwRxHtTrVTQJUzC6LeMFZ-YPBGFutevn14NoTR_RLznI3b--QVN_T2MBHQewdAeZAxTXBzx043l_RxcmDMvv5wt0R5HXhiPlcPcSPGqkGYlbnp7D1V98yoUupV5_6eFgO8_df2FgLsKnH4D49dEJe14MY37SV36br6qC317XcAadv-z5dVV7iPDjAHlwA4ZGKEA5i-znWPOXwX02HuPP36zzix4FYlp3eM5j7FYVV3V1M2ADFugdWehoc6PHcN47RfvlJ6Q0tt1dvBOFJ8DMsiti5Wk5d4kr-YW_n6LIBwUWUaVXM9lwv81IJQoFJk2xVgsnY1ogu83GZMARxC9_vDQWFGOklkEUobs2DkWfvm-JAIuZp0LIQXh7qSPyztrkJOxHDOBXMzJUQBU2ivKGhy95S0YSXXLHXwgIHcW-fuvl35XVn9V8PbXfzDa2F4fBnvpj8mu0umVY21wgAYpSV3iIMC1wtFk7Fmgz3u4iypmzf2RzmTDdl1s4OGiwKWALzrxy8qW6kaRgWsMCGAM6EBwjvkERheNzsc-roZelUdvxI2Gk4Ts42Wv9oYtuYO4GqEivysUx7CMpsrPO2RoruB_7CpCV5xGPLzhzLVKO3FBAMSB0Jo7pQVT0A2aKQuOF9UeHEIMHKzZC_rGeX_gGcTM1ue7wf_CamKG8qicv1MhoLryQgRl1Y6kjOSn2Jh5a16CMis_r8_JrjnOAQEyI0LGiPobsgJeU7WYuo0xr57jORTu9lL460JE6AmrOOO2zigkuBiNyYo3wqsAYuY3Zn1J9D1WLwIRWqVjttzNSyDmj5iLbJsm9jz56wIJnqhT49skmpW8yqDwvlX8jwiOutV_yjYXvhfJWGDPlSYA-ojCDEzv_3kFShCp-LhBvk0_-BG_UflejJw=s240-p-k-rw-no",
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
-      color: "from-teal-400 to-blue-400",
+      color: "from-sky-400 to-sky-400",
       redes: {
         instagram: "@bitacoraliteraria04",
         facebook: "Luis Alfonso Macas Jimenez",
@@ -214,7 +214,7 @@ export interface Autor {
       ensayos: 1,
       foto: "https://lh3.googleusercontent.com/a-/ALV-UjV8XXyq-I3B30gEdBFvS4yl5UHvyWs_ynJeqhHZux1eMgP9xhpj8CCsjfGvQUMwsKrNwXMxrgs438lCovPWCT4U3u94kJbKKY6zCKEQOBPz6UswoUbTRxqtnIJPgY131UbuQjjTGJagdlSe8yI0rnf7KEauwao8FmdFkHuzSjEWNlj2sEwLxr2M9anfVPasn4SvKYme0VunDFbaW7f1mUqHYlFrs42G-V3TxF4Zi5HX8Z_-3RBIfes1aNxxEflLa6H2RkHBRJ__21k1u2Y9OB18fQy2pBU72aH5HLStmF_oc1d_juQLC_W-LAKY8IS3HhDso-kFGk1ZSObTkLUnTkDQzaH7YflvbWZUVqeA1jGzHiyahNvNC_b1UrOtg3T-rzQFsk6GXA9D-BMNRSAfbBzOrqmsUfo9dCLsunHSZo-1ZRH1xVOFgdX-RDDus3KHcp3CP4vIALTa3m31_a2vtcALGoSxxXXS0uQU9ScUvJ0tldBtd1eo99qvQviVWhHOc5mUiNQjMiRfsFlAtwfH8Cqi2essPCmGj7auS2T1NVgahb0sCs-VEpKsUfd6iC2-dt6zfkkCiYzyH0M7NJ2jsosRRaMLVt9o5sGK-H7zv0gbakYPIsLu4LHARX7R0G0AkMHREYB-V2Zi-YD8AkNK2U8k4ie8uXc4EWzgzeFnGRZ7IRtndR4_pBwN49YKlRzaoySQa_xVOlvFaTbrISSKwro3ABR2rcj1Jn4FRxMvvbn1Yo-WzECcT2DHjPjLw8lwdKTFOH3fWNwz6T2mkkXaD0j4_nBKsVUnq7D5eUXNbaZzU86B_Nr4oF4OU_hrWnJejLKBkdWL1yxI6ZZ-8_ejnGoqHUyFFOcHbgGDOisaPhnuqFbBFBqSlWeQ4lt8XneCmedvehhderwsAJgzV2Blz9hsNShCkWG98Dug6GUIK3umif5VVlDInwFlnWichIsIwKxBO67fq-MX3-WR57bwj-HcWfpiUmM_=s240-p-k-rw-no",
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
-      color: "from-teal-400 to-blue-400",
+      color: "from-orange-400 to-sky-400",
       redes: {
         instagram: "@bitacoraliteraria04",
         facebook: "Mayuli Lizzeth Cueva Castillo",
@@ -227,7 +227,7 @@ export interface Autor {
       ensayos: 1,
       foto: "https://lh3.googleusercontent.com/a-/ALV-UjU977UCqxDElwaEUo8OHhsCtDfoOuHZ9EtOQ9YQz82SjcsOTspr1ewBOPBMu3eToh7AhQDArXFsyXNqMiRBGSzsIveDOiVIZXXPFc5Lw-JBfyUJzYUGDF9zi7I2JYDLpVGYL8aokfNOpG4H-JiKbisES2qTzDXYhBKAHnVe0-KnG9LAm6CplZQa501SNRmT8gQ1POamhL65u0sCnubD73X9r-mRqtQlhgQtMyhbfZ0x4tqH8LEY4s7hS597aQVkFqXr4y3tQemDb5rN6hakS3sZT6DRpGj0BBloFw1tL_h4U6b5q4b2isqU0jZkt-OhdI7gSligokNp6ZkGOegBLChgKGtxHVeNi2G8txcI6XF_e-SV6oDMvu5-XcVuxBO2HP45YALjAfHvYDkZOqh_FhP552ORF1QOfWw4wY8G1S9T6yy7GTmBepvXuXsABI-nLp6N59OCx9NvT_g4tcmueI-p3qXzjTy0iON-co1WoAcY6zc1HNl1yJliWvQqypjJi3R3i08ZIKLjyj78hFKOtFDZudAeQttd3xBDJUHefjcQ82M5iEXTiFy555pdQ66lGABGsG0--CWSCgRcxk4yQFKFCxDblcHc5TtlkwkKaMzVHm9Ef4BlhVmMnxFxu3kjYOfhJuwwaMEYUQyuci261Gpt1GuRKg6X42zDriw3fxldNDfx1j58BLptAZPLpWM0QGajF2lVpioraTPHoJ1gSEPPjq2z7OrCEwnQB5ZN2hr8UsHEofbDeyL-uKYgbEj_lgLd76CL0xf8oUVgF3SDnvxksFqBYK5z5YggalLPBreREsDtjI7jrJARufe5mGvl49rxkeZQUW6SJfT-HYjD_xkNbxwebwPS4c1qe3JklhKUxnBZVURhM-VADjGIe8Gh2vaKKPuLnlqY5RVsE5UFTfuehH0DN51AJK5jYvyOXpIKomnPFdR1uvL9p8Zu2ha-PX2hRmlzdOzf-ZRJbJLX_SMdYNBcA91PdA=s240-p-k-rw-no",
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
-      color: "from-teal-400 to-blue-400",
+      color: "from-purple-400 to-blue-400",
       redes: {
         instagram: "@bitacoraliteraria04",
         facebook: "Daniela Anabel Tamayo Vicente",
@@ -240,7 +240,7 @@ export interface Autor {
       ensayos: 1,
       foto: "https://lh3.googleusercontent.com/a-/ALV-UjX9H_1h5seMGztxhXivHhGi7lmzBoXSXV1nWunYhhT4Jo9eX7RHFUWEK946j-EnkIAnMK9FAJTzrK6wJ3NHZ6POVTKQSgQdW_WoaQTHrUxvrttpgv0wUF-GN9ddENsIK88hx8LDCgR7dtptmAzsPOrVKQU0k4XwawANpwlKPDLAQSkaZ1ZI45p3HOfAGUDQ4oHiPsKu_9OkKJTnZCZWCeiBNzdMBaGxH-7etxFIY1Xu6XCHVuDRQCDIktoOL79M_u_dOZ8xCPwtBjudiX4k4-tDKrHea07ORfp5Ncd8eE3VjfSc5E3QqmFoIttPCInwaKZW4YMY56rOK5cwEjbMEVRigqTSIV5oE58IGv1vpTcWFYkTvFshRQq_tV6WpDoyNftivkkY-8EOcUfnV_D_LxEvYeZOwAhPQRME33hJlTF3DrkTO1HmP8d_sTGi3Sw4QKsStpMfzrV-Ckfw8TBltYAozZS02hgNjAL_7o3GtAjk-WGx7Jp1_bYrj2X3zzzodcvIwmRLQi9MqeF50golZt0SR3C7juGPwfchqGCxAxKaupkbURDhPIwJPD6nJMnBaqqENxv_fTR1idHipjQrr0_jm_-6GCxyvR5WZKL26SIu2KV6TunUYkFkejm_KtOwiLYCIljkYupjCWGNPL7aFLlfSofldLPv1NaXTonibYWsgfDdNj8GUzhHkp5O8hCcUAmQ_8JYzWUZ_O1mb5j_8-SO_2YMJWdL8ChTZQL9LytnUsDfeZeUig6Xgec5DN9ll7qM80gm9GRuZ8zbjS2p6r3nWAoto6Ky0qUfJ3YxOs2DLiLaEnHHpsm34HKUbvlJJ37Jn9l5a8ycdTwMNW6jZWvMe9nVNczaVF5N9qtzayWMIEofzwGV_F6fMrSHolOt3GfJ63YcnEM6Kc5UiaOGJf_W6Qx0MY8D2ONsf-kAyjthpefH2JzapwwY_eROfiu-VBMnKy3VuHtlis8dmLmsLssbMthjqRSEsQ=s240-p-k-rw-no",
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
-      color: "from-teal-400 to-blue-400",
+      color: "from-purple-400 to-purple-400",
       redes: {
         instagram: "@bitacoraliteraria04",
         facebook: "Bryan Starman Lapo Jaramillo",
@@ -253,7 +253,7 @@ export interface Autor {
       ensayos: 1,
       foto: "https://lh3.googleusercontent.com/a-/ALV-UjVQWiawbqSZSA6y0x7JiETvlRojSd6yZcygeevIRy2-Iv_it29kSdSKKo5U830oCVKQTEyalko5GIRBnAZGNnM8psZwqMhz-otlzSnE0elPDwfEoEb6TyIcJVlikLEagEnF7vxnZr4JmAH_N9ahv4A--EY3igCY-JqhRppbyMZuWa61qRF-NRXOGQpMBqICuTpMxToP-6K7oB7FfnuhF661QyuymFwgd39zQQ8xwggTeBDxEBeNQfELn3ApHj4n4eL1G57ULooEDtWasNy3JmIn-g0KQYjeGtEcpL2wH-9IChZAXeQueLUsH3wKt-4qA4YzC3HM0VCUhdUvgRup8XVHxOxafs0XxLCHkVxYWcWT12rcy5A0_PtfHKmIkg8ktxIQgckgxrurxM98gSU_crbGM-vsEyBF1mZRhurMdYr3CS18TDvnhV8v1PnqNGv2vnq1J9o35kDDzLreRygVAkiqa19IXPgOyzeHPuvgk81DHJy2gyqoDHT_kOE4raYFbGNfljUhLYApFxbc0hvP_BhSlP46Ejr5sV0z3FRdqaHqvdXYmqvwLhhYaEpQqIlfFWMpL60YYE4azzx3HYsLYfmJNB4m3Tdj2FuNCl1uG6xbEXKs9JRWtPL9bvbSJCy_3hyaNBL5ff0y4SUi1MYgo3Efeog0flGyu9bZ5atrwfFqaMSpqyn2HOt9VEUiIb-Qqs8t22IpRJUalQFEwinXvvWS3hZ_i28sRvoH78FWOGwBVMyFeCZ0NmyF1CbLJfwEzpuevG-zEbg5fqlU710EUZC3CW8NHYHR9JWeIR9S4Wv8UUTPgXURuIaFohgRQp6WnwDEKVNmuOQAl4UfXk4P5ucuPEeFxtzJpKPOldcUa0S5aSjDynMzKmqmsigy_rkMnHDZrCkk_F7JyQpV-N0ryxem-CPb9Rz1cClcgAmInf4-EHVPAhHUocos7Mbg3ajBC9AGTLCVqRVCSDHIMLhJI15DBbgYc-viQw=s240-p-k-rw-no",
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
-      color: "from-teal-400 to-blue-400",
+      color: "from-yellow-400 to-yellow-400",
       redes: {
         instagram: "@bitacoraliteraria04",
         facebook: "Hector Geovanny Cabrera Gonzalez",
@@ -266,7 +266,7 @@ export interface Autor {
       ensayos: 1,
       foto: "https://lh3.googleusercontent.com/a-/ALV-UjU7FcoRAscde-X2ab4v5E0dzHeQJ--qkipjyRJ-HIfr98FQRpd-CHJ8qsAcvuu7GuRkLn_yXLJWOAF8Hi_M5XNq8PQmTbuxrNWC5ZizIdpYPnShgvGLIReTg3-tpiIBXab-8klHVlY3aalckUuBLaoQ3VaVBsIdfaqy_Z0Idgiy-hNfgkbUSgydWix4RzNxbaDMNk7PpcqPyo4qIALvqdG6Vl6tgH7YDBt0p2lbkDxHqjPi_kLS-poKqzW88O8h9na5gleGi000B8rukFyeyXy5UrjfKj4h0Hbim4NtJnjnY073HBU6lbOioOfAJPakc67UBGoviLTgK7lW9mVIcUgTtZXr01oVVDS3FW1rhrN0cPBxEI9LvBRs2C5vHV6cVDHTIQwRyf1YuYbChNJ6IQUJLgYy_AxghmrsSw8OwINrnEvRvuPcURZ89-ueW_x-vUPTtr7A7AFmq0OkqUBqaEUP5xZw3TjPYMqhvtCAWgIDb_cfco6vlzCT-m9MVSMHS93V2TcTKqgnitW_v_Wefl_y4KuIsdv5BuzcGxzGJqgo7aKf2xlLfnB4MojM738TOm7Iw-4xzs8WTPgi3UciCIH1UyYqix2_VG6ki7lYPO2Ro6C0_6wzU_qNoYstEULAJ5c0OcqiWoi3-BgfqsXjSz4Ex5RbSYyWsAZU-h6GwGTXUR4RGhNNWk0gBEA8hZQONK8h8Q0myTTtddDSE2vSERE8PspQ-sesIauWgjgBKibBMekQgIgJPUFwXtXRFIfyIkHuigWTpLbJDUSGlmQla2EYEKq63Yylv8R3Gm1e6ec7DIxK9ELiFExOm9DDwst010ldhr13BCkRbdiao2KXsLmQJne46IN38eLoYy--cSNp-iqaWxVjkTOU6rUnj-Dl2TXFkWcXtVEzMHpW6rA0Y7O-Cq1dWV-Qyxexa1oxQfI7Un7rMvhLqJXckBzAaBP2ZKz2nv6st8gdhvMLS-d_FNdSRnaZiXQu=s240-p-k-rw-no",
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
-      color: "from-teal-400 to-blue-400",
+      color: "from-green-400 to-green-400",
       redes: {
         instagram: "@bitacoraliteraria04",
         facebook: "Kenia Zuleica Cedeño Mayorga",
