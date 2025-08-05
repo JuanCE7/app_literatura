@@ -1,6 +1,22 @@
 import React, { useState } from 'react';
 import { Download, FileText, Star, X } from 'lucide-react';
 
+// Function to handle file download
+const handleDownload = (fileName: string) => {
+  // Create a temporary anchor element
+  const link = document.createElement('a');
+  // Set the href to the file in the public directory
+  link.href = `/${fileName}`;
+  // Set the download attribute with the desired filename
+  link.download = fileName;
+  // Append to the document
+  document.body.appendChild(link);
+  // Trigger the download
+  link.click();
+  // Clean up
+  document.body.removeChild(link);
+};
+
 interface Ensayo {
   titulo: string;
   autor: string;
@@ -10,6 +26,7 @@ interface Ensayo {
   fecha: string;
   rating: number;
   preview: string;
+  pdf: string;
 }
 
 interface EnsayosPageProps {
@@ -117,7 +134,13 @@ const EnsayosPage: React.FC<EnsayosPageProps> = ({ ensayos }) => {
                 </div>
 
                 <div className="flex gap-4 mt-8">
-                  <button className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 font-medium">
+                  <button 
+                    onClick={() => {
+                      // Generate a filename based on the ensayo title
+                      handleDownload(selectedEnsayo.pdf);
+                    }}
+                    className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 font-medium"
+                  >
                     <Download className="w-4 h-4" />
                     Descargar PDF Completo
                   </button>
