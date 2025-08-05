@@ -1,5 +1,12 @@
 import React from "react";
-import { BookOpen, FileText, Users, ChevronDown, Feather } from "lucide-react";
+import {
+  BookOpen,
+  FileText,
+  Users,
+  ChevronDown,
+  Feather,
+  Instagram,
+} from "lucide-react";
 
 interface InicioPageProps {
   currentText: string;
@@ -34,16 +41,12 @@ const InicioPage: React.FC<InicioPageProps> = ({
         <div className="mb-6 sm:mb-8 animate-fade-in-up">
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif font-bold text-gray-800 mb-4 leading-tight">
             Redescubriendo
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 block animate-gradient">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 block animate-gradient text-3xl sm:text-5xl md:text-7xl">
               lo Hispanoamericano
             </span>
           </h1>
-        </div>
-
-        <div className="h-16 sm:h-20 flex items-center justify-center mb-8 sm:mb-12 px-4">
-          <p className="text-lg sm:text-2xl md:text-3xl text-gray-600 font-light text-center">
-            {currentText}
-            <span className="animate-pulse text-amber-600">|</span>
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light mt-4">
+            Ensayos, video reseñas y mapas
           </p>
         </div>
 
@@ -51,6 +54,17 @@ const InicioPage: React.FC<InicioPageProps> = ({
           className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 animate-fade-in-up px-4"
           style={{ animationDelay: "0.5s" }}
         >
+          <a
+            href="https://www.instagram.com/bitacoraliteraria04"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full font-medium hover:from-pink-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto"
+          >
+            <span className="flex items-center justify-center space-x-2">
+              <Instagram className="w-4 h-4 sm:w-5 sm:h-5 group-hover:rotate-12 transition-transform" />
+              <span className="text-sm sm:text-base">Síguenos</span>
+            </span>
+          </a>
           <button
             onClick={() => navigateToPage("autores")}
             className="group bg-gradient-to-r from-amber-600 to-orange-600 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full font-medium hover:from-amber-700 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto"
