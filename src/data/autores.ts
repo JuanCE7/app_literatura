@@ -21,7 +21,7 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura.",
       color: "from-purple-400 to-pink-400",
       redes: {
-        instagram: "@maria.moscol",
+        instagram: "@bitacoraliteraria04",
         facebook: "profile.php?id=100010058592563",
         email: "maria.moscol@unl.edu.ec"
       }
@@ -34,7 +34,7 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura",
       color: "from-blue-400 to-cyan-400",
       redes: {
-        instagram: "@abigail.arias",
+        instagram: "@bitacoraliteraria04",
         facebook: "Abigail Salomé Arias León",
         email: "abigail.arias@unl.edu.ec"
       }
@@ -47,7 +47,7 @@ export interface Autor {
       descripcion: "Estudiante de 5to Ciclo de Literatura",
       color: "from-blue-400 to-cyan-400",
       redes: {
-        instagram: "@valeria.guadalupe",
+        instagram: "@bitacoraliteraria04",
         facebook: "Valeria Guadalupe Mallaguari Yaguana",
         email: "valeria.mallaguari@unl.edu.ec"
       }
@@ -60,7 +60,7 @@ export interface Autor {
       descripcion: "Estudiante de 5to Ciclo de Literatura. ",
       color: "from-green-400 to-emerald-400",
       redes: {
-        instagram: "@miriam.alvarez",
+        instagram: "@bitacoraliteraria04",
         facebook: "Miriam Liliana Alvarez Merino",
         email: "miriam.alvarez@unl.edu.ec"
       }
@@ -73,7 +73,7 @@ export interface Autor {
       descripcion: "Estudiante de 5to Ciclo de Literatura. ",
       color: "from-orange-400 to-red-400",
       redes: {
-        instagram: "@evelin.leon",
+        instagram: "@bitacoraliteraria04",
         facebook: "Evelin Alexandra Leon Macas",
         email: "evelin.leon@unl.edu.ec"
       }
@@ -86,7 +86,7 @@ export interface Autor {
       descripcion: "Estudiante de 5to Ciclo de Literatura. ",
       color: "from-indigo-400 to-purple-400",
       redes: {
-        instagram: "@steven.gilbert",
+        instagram: "@bitacoraliteraria04",
         facebook: "Steven Gilbert Sarango",
         email: "steven.gilbert@unl.edu.ec"
       }
@@ -99,7 +99,7 @@ export interface Autor {
       descripcion: "Estudiante de 5to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@yanela.aponte",
+        instagram: "@bitacoraliteraria04",
         facebook: "Yanela Elizabeth Armijos Chamba",
         email: "yanela.armijos@unl.edu.ec"
       }
@@ -112,7 +112,7 @@ export interface Autor {
       descripcion: "Estudiante de 5to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@wilfredo.aponte",
+        instagram: "@bitacoraliteraria04",
         facebook: "Wilfredo Jeovanny Aponte Apontes",
         email: "wilfredo.aponte@edu.pe"
       }
@@ -125,7 +125,7 @@ export interface Autor {
       descripcion: "Estudiante de 5to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@patricia.janeth",
+        instagram: "@bitacoraliteraria04",
         facebook: "Patricia Janeth Alvarez Jimenez",
         email: "patricia.alvarez@unl.edu.ec"
       }
@@ -138,7 +138,7 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@aracely.jamile",
+        instagram: "@bitacoraliteraria04",
         facebook: "Aracely Jamile Chamba Riofrio",
         email: "aracely.chamba@unl.edu.ec"
       }
@@ -151,7 +151,7 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@luisa.milena",
+        instagram: "@bitacoraliteraria04",
         facebook: "Luisa Milena Parra Chalan",
         email: "luisa.parra@unl.edu.ec"
       }
@@ -164,7 +164,7 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@astrid.carolina",
+        instagram: "@bitacoraliteraria04",
         facebook: "Astrid Carolina Jumbo Campoverde",
         email: "astrid.jumbo@unl.edu.ec"
       }
@@ -177,7 +177,7 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
+        instagram: "@bitacoraliteraria04",
         facebook: "Fredy Alexander Sanchez Zapata",
         email: "fredy.sanchez@unl.edu.ec"
       }
@@ -190,9 +190,9 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
-        facebook: "Fredy Alexander Sanchez Zapata",
-        email: "fredy.sanchez@unl.edu.ec"
+        instagram: "@bitacoraliteraria04",
+        facebook: "Andrea Veronica Carrion Miles",
+        email: "andrea.carrion@unl.edu.ec"
       }
     },
     {
@@ -203,9 +203,9 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
-        facebook: "Fredy Alexander Sanchez Zapata",
-        email: "fredy.sanchez@unl.edu.ec"
+        instagram: "@bitacoraliteraria04",
+        facebook: "Luis Alfonso Macas Jimenez",
+        email: "luis.macas@unl.edu.ec"
       }
     },
     {
@@ -216,9 +216,9 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
-        facebook: "Fredy Alexander Sanchez Zapata",
-        email: "fredy.sanchez@unl.edu.ec"
+        instagram: "@bitacoraliteraria04",
+        facebook: "Mayuli Lizzeth Cueva Castillo",
+        email: "mayuli.cueva@unl.edu.ec"
       }
     },
     {
@@ -229,9 +229,9 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
-        facebook: "Fredy Alexander Sanchez Zapata",
-        email: "fredy.sanchez@unl.edu.ec"
+        instagram: "@bitacoraliteraria04",
+        facebook: "Daniela Anabel Tamayo Vicente",
+        email: "daniela.tamayo@unl.edu.ec"
       }
     },
     {
@@ -242,9 +242,9 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
-        facebook: "Fredy Alexander Sanchez Zapata",
-        email: "fredy.sanchez@unl.edu.ec"
+        instagram: "@bitacoraliteraria04",
+        facebook: "Bryan Starman Lapo Jaramillo",
+        email: "bryan.lapo@unl.edu.ec"
       }
     },
     {
@@ -255,9 +255,9 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
-        facebook: "Fredy Alexander Sanchez Zapata",
-        email: "fredy.sanchez@unl.edu.ec"
+        instagram: "@bitacoraliteraria04",
+        facebook: "Hector Geovanny Cabrera Gonzalez",
+        email: "hector.cabrera@unl.edu.ec"
       }
     },
     {
@@ -268,9 +268,9 @@ export interface Autor {
       descripcion: "Estudiante de 6to Ciclo de Literatura. ",
       color: "from-teal-400 to-blue-400",
       redes: {
-        instagram: "@fredy.alexander",
-        facebook: "Fredy Alexander Sanchez Zapata",
-        email: "fredy.sanchez@unl.edu.ec"
+        instagram: "@bitacoraliteraria04",
+        facebook: "Kenia Zuleica Cedeño Mayorga",
+        email: "kenia.cedeno@unl.edu.ec"
       }
     }
   ];
