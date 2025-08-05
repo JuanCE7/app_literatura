@@ -28,7 +28,7 @@ const ComunidadPage: React.FC = () => {
   const [comentarios, setComentarios] = useState<Comentario[]>([
     {
       id: 1,
-      nombre: "Ana García",
+      nombre: "Maria José Moscol",
       comentario: "¡Increíble trabajo! Los ensayos son muy profundos y bien estructurados. Me ayudaron mucho en mi comprensión de la literatura contemporánea.",
       likes: 12,
       tiempo: "hace 2 horas",
